@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Drawing</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Sky Blue */
+        }
+        .flower {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            background-color: #FFD700; /* Gold */
+            border-radius: 50%;
+        }
+        .petal:nth-child(odd) {
+            transform: rotate(45deg);
+        }
+        .petal:nth-child(even) {
+            transform: rotate(90deg);
+        }
+        .center {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #008000; /* Green */
+            border-radius: 50%;
+            left: 60px;
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="center"></div>
+    </div>
+</body>
+</html>
