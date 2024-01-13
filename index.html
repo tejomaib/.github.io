@@ -1,85 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: maroon;
-            color: white;
-            text-align: center;
-            margin: 0;
-            justify-content: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World Page</title>
+  <style>
+    body {
+      background-color: maroon;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-        h1 {
-            font-size: 2em;
-            margin: 0;
-        }
+    h1, h2 {
+      color: white;
+      margin: 0;
+    }
 
-        h2 {
-            font-size: 1.5em;
-            margin: 0;
-        }
-    </style>
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .flower {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Tejomai Buyyanapragada</h1>
-    <h2>Freshman at Texas A&M University</h2>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Drawing</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #87CEEB; /* Sky Blue */
-        }
-        .flower {
-            position: relative;
-            width: 150px;
-            height: 150px;
-        }
-        .petal {
-            position: absolute;
-            width: 50px;
-            height: 100px;
-            background-color: #FFD700; /* Gold */
-            border-radius: 50%;
-        }
-        .petal:nth-child(odd) {
-            transform: rotate(45deg);
-        }
-        .petal:nth-child(even) {
-            transform: rotate(90deg);
-        }
-        .center {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background-color: #008000; /* Green */
-            border-radius: 50%;
-            left: 60px;
-            top: 60px;
-        }
-    </style>
-</head>
-<body>
-    <div class="flower">
-        <div class="petal"></div>
-        <div class="petal"></div>
-        <div class="petal"></div>
-        <div class="petal"></div>
-        <div class="center"></div>
-    </div>
+  <h1>Tejomai Buyyanapragada</h1>
+  <h2>Freshman at Texas A&M University</h2>
+  <div class="flower"></div>
 </body>
 </html>
