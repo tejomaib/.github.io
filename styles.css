@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Adjust as needed */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffc0cb; /* Light pink background */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Hide all images initially */
+}
+
+.slideshow img:first-child {
+    display: block; /* Display the first image initially */
+}
